@@ -1,0 +1,37 @@
+name: trantomp3
+description: "Convert YouTube videos to MP3 and download them on Android."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Extract audio stream from YouTube URL
+  youtube_explode_dart: ^2.2.0
+  # Download the audio file with progress
+  dio: ^5.7.0
+  # Get save directory
+  path_provider: ^2.1.4
+  # Request storage permission
+  permission_handler: ^12.0.0
+  # Play MP3 files in the library
+  just_audio: ^0.9.40
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png
